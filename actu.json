@@ -1,0 +1,38 @@
+{
+    "config": {
+      "updateInterval": 3600,
+      "cities": [
+        {
+          "name": "Paris",
+          "id": 2988507
+        },
+        {
+          "name": "Marseille",
+          "id": 2995469
+        },
+        {
+          "name": "Lille",
+          "id": 2998324
+        }
+      ],
+      "api": {
+        "endpoint": "group",
+        "params": {
+          "units": "metric",
+          "lang": "fr"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "scheduling": {
+        "enabled": true,
+        "startTime": "00:00",
+        "logUpdates": true,
+        "retryOnFailure": {
+          "attempts": 3,
+          "delayBetweenAttempts": 60
+        }
+      }
+    }
+  }
